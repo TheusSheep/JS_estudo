@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        h1{
+            font: normal bolder 2em Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        
+        p{
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo mexer com Dom</h1>
+    <p>Sim, finalmente aprendendo a usar <strong>JS</strong> para interagir com o <strong>HTML</strong> e <strong>CSS</strong></p>
+    <div id="name"></div>
+    <script>
+        let p1 = document.getElementsByTagName('p')[0]
+        p1.style.background = 'black'
+        let d = document.getElementById('name')
+        d = document.write('Macaco')
+    </script>
+</body>
+</html>
