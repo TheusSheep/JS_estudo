@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM</title>
+</head>
+<body>
+    <h1>Sistema de Velocidade</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="resp">
+
+    </div>
+    <script>
+        function clicar(){
+            var velt = document.getElementById('vel')
+            var text = document.getElementById('resp')
+            var veln = Number(velt.value)
+            text.innerHTML = `<p>Sua velocidade é de <strong>${veln}Km/h</strong>.</p>`
+            if (veln > 60){
+                text.innerHTML += '<p>Você foi MULTADO!</p>'
+            }
+            text.innerHTML += '<p>Ande sempre com cinto de segurança</p>'
+        }
+    </script>
+</body>
+</html>
