@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Exercício 01</title>
+    <title>Exercício 02</title>
 </head>
 <body>
     <header>
-        <h1>Tempo</h1>
+        <h1>Idade</h1>
     </header>
     <section>
         <div>
-            a
+            <p>
+                <label for="num">Coloque o ano que nasceu:</label>
+                <input type="number" name="num" id="num">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="rad_s" id="rad_m" checked>
+                <label for="rad_m">Masculino</label>
+                <input type="radio" name="rad_s" id="rad_f">
+                <label for="rad_f">Feminino</label>
+            </p>
+            <p>
+                <input type="button" id="enviar" value="Enviar">
+            </p>
         </div>
-        <div>
-            b
+        <div id="res">
+           
         </div>
     </section>
     <footer>

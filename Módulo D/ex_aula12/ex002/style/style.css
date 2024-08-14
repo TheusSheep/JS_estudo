@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: rgb(110, 206, 230);
+    background-color: rgb(26, 26, 26);
     padding: 50px;
 }
 
@@ -30,6 +30,20 @@ section{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
     background-color: white;
     border-radius: 5px;
+}
+
+section p{
+    padding: 15px 5px;
+}
+
+section img{
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    border-radius: 100%;
 }
 
 footer{
