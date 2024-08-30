@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div id="formulario">
+            <form action="script.js" method="post">
+                <p>
+                    <label for="n_inicial">Início:</label>
+                    <input type="number" name="n_inicial" id="n_inicial">
+                </p>
+                <p>
+                    <label for="n_final">Fim:</label>
+                    <input type="number" name="n_final" id="n_final">
+                </p>
+                <p>
+                    <label for="passos">Passo</label>
+                    <input type="number" name="passos" id="passos">
+                </p>
+            </form>
+            <p>
+                <input type="submit" id="enviar" value="Contar">
+            </p>
+        </div>
+        <div id="resp">
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://www.github.com/TheusSheep" target="_blank" rel="external">@Tsheep</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
