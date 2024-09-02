@@ -2,19 +2,38 @@ var enviar = document.getElementById('enviar')
 enviar.addEventListener('click', clique)
 
 function clique(){
-    var n_i = document.getElementById('n_inicial')
-    var n_f = document.getElementById('n_final')
-    var p = document.getElementById('passos')
-    var resposta = document.getElementById('resp')
+    let resposta = document.getElementById('resp')
+    let n_inicial = document.getElementById('n_inicial')
+    let n_final = document.getElementById('n_final')
+    let passos = document.getElementById('passos')
+    
 
-    if (n_i.value.length == 0 || n_f.value.length == 0 ){
-        window.alert('Verifique se {Início} ou {Fim} estão com algum número.')
-    } else if(p.value.length == 0 || p.value == 0){
-        window.alert('Como não foi colocado a quantidade de {Passos} então será relacionado ao número 1.')
-        p.value = 1
+    if (n_inicial.value.length == 0 || n_final.value.length == 0 || passos.value.length == 0 ){
+        resposta.innerHTML = 'Impossivel Contar!'
+        window.alert('Verifique se {Início}, {Fim} ou {Passos} estão com algum número.')
+
+    } else {
+        let n_i = Number(n_inicial.value)
+        let n_f = Number(n_final.value)
+        let p = Number(passos.value)
+        resposta.innerHTML = 'Contando: <br>'
+
+        if (p <= 0){
+            window.alert('O número definito de {Passos} não é possível fazer uma contagem por isso recebera valor 1')
+            p = 1
+        }
+        
+        if (n_i < n_f){
+            // Contagem Crescente
+            for (var c = n_i; c <= n_f; c += p){
+                resposta.innerHTML += ` ${c}° \u{1F449} `
+            }
+        } else {
+            // Contagem decrescente
+            for (var c = n_i; c >= n_f; c -= p){
+                resposta.innerHTML += ` ${c}° \u{1F449} `
+            }
+        }
+         resposta.innerHTML += ` \u{1F3C1} `
     }
-    for (var c = Number(n_i.value); c <= Number(n_f.value); c += Number(p.value)){
-        resposta.innerHTML += ` ${c}° &#x1F449; `
-    }
-    resposta.innerHTML += ` &#x1F3C1; `
 }
