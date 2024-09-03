@@ -31,6 +31,17 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
 }
 
+#formulário{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#tabuada h2{
+    padding: 10px 0px;
+    font: normal bold 1.3em Arial, Helvetica, sans-serif;
+}
+
 footer p{
     padding-top: 50px;
     text-align: center;
