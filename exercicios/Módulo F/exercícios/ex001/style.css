@@ -31,11 +31,18 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
 }
 
-#tab {
-    padding: 15px 5px;
-
+#tab{
     display: flex;
     flex-direction: column;
+}
+
+#tab_num{
+    margin: 10px 0px;
+    width: 339px;
+}
+
+#resp p{
+    margin-top: 10px;
 }
 
 footer p {
